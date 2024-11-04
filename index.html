@@ -11,16 +11,17 @@
     <div class="container">
         <nav>
             <div class="logo">
-                <h1><span style="color:red";>Symp</span>to<span style="color:green";>Aid</span></h1>
+                <h1 class="Symp"><span style="color:red;">Symp</span>to<span style="color:green;">Aid</span></h1>
             </div>
-            <div class="logo1"><img src="homepagecss/images/Atabs.jpg" alt="atab's" width="50" height="50"> </div>
-            <ul>
+            <div class="logo1"><img src="homepagecss/images/Atabs.jpg" alt="atab's"></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Unicode for the hamburger icon -->
+            </div>
+            <ul class="nav-links">
                 <li><a href="#main">Home</a></li>
                 <li><a href="#service">Symptom Checker</a></li>
                 <li><a href="#doctors">Find Services</a></li>
                 <li><a href="#blog">Health Topics</a></li>
-                <li><a href=""></a></li>
-
             </ul>
         </nav>
 
@@ -31,28 +32,35 @@
                 <button>Learn More</button>
             </div>
         </div>
- 
+    </div>
     <div class="bg-1">
         <div id="service">
             <div class="head">
                 <h1>Schedules</h1>
                 <div class="serviceCard">
                     <div class="card">
-                        <img src="chest.webp" alt="">
-                        <p>Chest and Respiratory</p>
-                    </div>
-                     
-                    <div class="card">
-                        <img src="laboratory.webp" alt="">
-                        <p>Laboratory and Science</p>
+                        <img src="homepagecss/images/Atabs.jpg" alt="monday">
+                        <p>Monday</p>
                     </div>
                     <div class="card">
-                        <img src="physio.webp" alt="">
-                        <p>Physiotherapy</p>
+                        <img src="homepagecss/images/Atabs.jpg" alt="monday">
+                        <p>Tuesday</p>
                     </div>
                     <div class="card">
-                        <img src="nutrition.webp" alt="">
-                        <p>Nutrition Detection</p>
+                        <img src="homepagecss/images/Atabs.jpg" alt="monday">
+                        <p>Wednesday</p>
+                    </div>
+                    <div class="card">
+                        <img src="homepagecss/images/Atabs.jpg" alt="monday">
+                        <p>Thursday</p>
+                    </div>
+                    <div class="card">
+                        <img src="homepagecss/images/Atabs.jpg" alt="monday">
+                        <p>Friday</p>
+                    </div>
+                    <div class="card">
+                        <img src="homepagecss/images/Atabs.jpg" alt="monday">
+                        <p>Saturday</p>
                     </div>
                 </div>
             </div>
@@ -157,7 +165,12 @@
 
             </div>
         </div>
-    </div>
-    <script src="index.js"></script>
+    <script >
+        function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+        }
+
+    </script>
 </body>
 </html>
