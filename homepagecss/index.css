@@ -110,7 +110,10 @@ ul li a {
     .hamburger:hover{
         color: white;
     }
-
+    .container{
+        position: relative;
+        text-align: center;
+    }
     .nav-links {
         display: none; /* Hide menu by default */
         flex-direction: column;
@@ -144,20 +147,23 @@ ul li a {
         height: 60px;
         top: 13px;
     }
-    .main {
-        padding: 80px 10px; /* Further reduce padding */
-    }
 
     .mainText {
-        width: auto; /* Use full width for smaller screens */
         text-align: center;
+        left: 0%;
+        width: auto; /* Use full width for smaller screens */
+        
     }
 
     .mainText h1 {
+        position: absolute;
+        text-align: center;
         font-size: 32px; /* Smaller font size for headings */
     }
 
     .mainText p {
+        position: absolute;
+        text-align: center;
         font-size: 14px; /* Smaller font size for paragraph */
     }
 
@@ -173,7 +179,6 @@ ul li a {
 .main{
     display: flex;
     justify-content: center;
-    padding: 170px;
     height: 500px;
 }
 .mainText{
@@ -181,18 +186,17 @@ ul li a {
     margin-top: 44px;
     color: rgb(249, 233, 233);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    left: 100px;
     width: 380px;
     z-index: -1;
 }
 .mainText h1{
     font-size: 55px;
-    left: 0px;
+
     width: 380px;
 }
 .mainText p{
     margin-top: 22px;
-    left: 0px;
+
 }
 .mainText button{
     margin-top: 22px;
@@ -291,7 +295,7 @@ ul li a {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
     .serviceCard {
         grid-template-columns: 1fr; /* 1 column for smaller screens */
     }
@@ -438,7 +442,7 @@ ul li a {
     }
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:720px){
     
     .team img{
         width: 30%;
@@ -462,9 +466,3 @@ ul li a {
     }
 }
     
-
-@media screen and (max-width:620px){
-    .main h1{
-        font-size: 33px;
-    }
-}
