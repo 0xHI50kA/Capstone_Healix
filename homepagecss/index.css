@@ -10,6 +10,9 @@ body{
     background-size: cover;
     z-index: -4;
 }
+.container{
+    height: 100%;
+}
 /* nav{
     display: flex;
     align-items: center;
@@ -60,6 +63,7 @@ ul li a{
     display: none;
     font-size: 30px;
     cursor: pointer;
+    left: 100px;
 }
 
 ul {
@@ -99,6 +103,12 @@ ul li a {
 @media (max-width: 768px) {
     .hamburger {
         display: block; /* Show the hamburger */
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .hamburger:hover{
+        color: white;
     }
 
     .nav-links {
@@ -121,6 +131,42 @@ ul li a {
         margin-inline: 0; /* Remove margin for single column */
         padding: 10px 20px;
     }
+    .logo {
+        font-size: 12px;
+        margin-left: 120px;
+    }
+    
+    .logo1 img{
+        position: absolute;
+        left: 74px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        top: 13px;
+    }
+    .main {
+        padding: 80px 10px; /* Further reduce padding */
+    }
+
+    .mainText {
+        width: auto; /* Use full width for smaller screens */
+        text-align: center;
+    }
+
+    .mainText h1 {
+        font-size: 32px; /* Smaller font size for headings */
+    }
+
+    .mainText p {
+        font-size: 14px; /* Smaller font size for paragraph */
+    }
+
+    .mainText button {
+        width: 120px; /* Adjust button width */
+        height: 35px; /* Adjust button height */
+        font-size: 16px; /* Smaller button font size */
+    }
+    
 }
 
 
@@ -128,7 +174,39 @@ ul li a {
     display: flex;
     justify-content: center;
     padding: 170px;
-    height: 300px;
+    height: 500px;
+}
+.mainText{
+    position: absolute;
+    margin-top: 44px;
+    color: rgb(249, 233, 233);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    left: 100px;
+    width: 380px;
+    z-index: -1;
+}
+.mainText h1{
+    font-size: 55px;
+    left: 0px;
+    width: 380px;
+}
+.mainText p{
+    margin-top: 22px;
+    left: 0px;
+}
+.mainText button{
+    margin-top: 22px;
+    border-radius: 20px;
+    width: 140px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.head{
+    text-align: center;
+    padding: 88px;
 }
 
 .bg-1,.bg-2{
@@ -145,44 +223,15 @@ ul li a {
   .bg-1{
     background-image: url("images/Atabs.jpg");
     width:100%;
-    height:180vh;
+    height:100%;
   }
   .bg-2{
     background-image: url("images/samurai3.jpg");
     width:100%;
-    height:100vh;
+    height:100%;
   }
 
-.mainText{
-    position: absolute;
-    margin-top: 44px;
-    color: rgb(249, 233, 233);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    left: 100px;
-    width: 500px;
-    z-index: -1;
-}
-.mainText h1{
-    font-size: 66px;
-    left: 0px;
-}
-.mainText p{
-    margin-top: 22px;
-    left: 0px;
-}
-.mainText button{
-    margin-top: 22px;
-    width: 140px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    border: none;
-}
-.head{
-    text-align: center;
-    padding: 88px;
-}
+
 /* .service{
     display: flex;
     flex-wrap: wrap;
@@ -404,7 +453,7 @@ ul li a {
     }
 }
 
-@media screen and (max-width:920px){
+@media screen and (max-width:760px){
     ul{
         display: none;
     }
